@@ -18,6 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
+    <script src ="./js/createRequest.js"></script>
   </head>
 
   <body>
@@ -49,7 +50,7 @@
     <main role="main" class="container">
 
       <div class="starter-template">
-        <h1 style = "font-weight: 300">Create Request</h1>
+        <h1 style = "font-weight: 300"> Create Request</h1>
         <br>
         <!-- <p class="lead">Current Sales</p> -->
         <div class="container">
@@ -63,25 +64,36 @@
                 <div class="form-group row">
                   <label for="staticEmail" class="col-sm-3 col-form-label">Request Area</label>
                   <div class="col-sm-9">
-                    <input class="form-control" id="inputPassword" placeholder="Ex. Photo">
+                    <select class="form-control" id="area" placeholder="Ex. Photo">
+                      <option selected="selected">Choose...</option>
+                      <option value="1">IM</option>
+                      <option value="2">Anelva</option>
+                      <option value="3">Photo</option>
+                      <option value="4">MR</option>
+                      <option value="5">Metro</option>
+                      <option value="6">Insp</option>
+                      <option value="7">CMP</option>
+                      <option value="8">Nife/Etch</option>
+                      <option value="9">Metals</option>
+                    </select>
                   </div>
                 </div>
                 <div class="form-group row">
                   <label for="inputPassword" class="col-sm-3 col-form-label">Requestor</label>
                   <div class="col-sm-9">
-                    <input class="form-control" id="inputPassword" placeholder="Ex. Integration Eng">
+                    <input class="form-control" id="requestor" placeholder="Ex. Integration Eng">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label for="staticEmail" class="col-sm-3 col-form-label">Owner</label>
                   <div class="col-sm-9">
-                    <input class="form-control" id="inputPassword" placeholder="Ex. Photo Tech">
+                    <input class="form-control" id="owner" placeholder="Ex. Photo Tech">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label for="inputPassword" class="col-sm-3 col-form-label">Request</label>
                   <div class="col-sm-9">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="request" rows="3"></textarea>
                   </div>
                 </div>
                 <button type="button" class="btn btn-success btn-lg sharing">Post Request</button>
