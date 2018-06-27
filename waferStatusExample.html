@@ -40,7 +40,7 @@
             <a class="nav-link" href="viewRequests.html">View Requests</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Wafer Status</a>
+            <a class="nav-link" href="waferStatus.html">Wafer Status</a>
           </li>
         </ul>
       </div>
@@ -49,7 +49,7 @@
     <main role="main" class="container">
 
       <div class="starter-template">
-        <h1 style = "font-weight: 300">Wafer Status</h1>
+        <h1 style = "font-weight: 300">Viewing Wafer ID# 123456</h1>
         <br>
         <!-- <p class="lead">Current Sales</p> -->
         <div class="container">
@@ -61,15 +61,43 @@
             <div class="col-sm-10 col-md-8 col-lg-6">
               <form>
                 <div class="form-group row">
-                  <label for="staticEmail" class="col-sm-3 col-form-label">Wafer ID</label>
+                  <label for="staticEmail" class="col-sm-3 col-form-label">Request Area</label>
                   <div class="col-sm-9">
-                    <input class="form-control" id="inputPassword" placeholder="Ex. 123456">
+                    <input class="form-control" type="text" placeholder="Photo" readonly>
                   </div>
                 </div>
-                <button type="button" class="btn btn-success btn-lg sharing" onclick="location.href = 'waferStatusExample.html';">View Wafer Status</button>
+                <div class="form-group row">
+                  <label for="inputPassword" class="col-sm-3 col-form-label">Requestor</label>
+                  <div class="col-sm-9">
+                    <input class="form-control" type="text" placeholder="Integration Eng" readonly>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="staticEmail" class="col-sm-3 col-form-label">Owner</label>
+                  <div class="col-sm-9">
+                    <input class="form-control" type="text" placeholder="Photo Tech" readonly>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="staticEmail" class="col-sm-3 col-form-label">ETA</label>
+                  <div class="col-sm-9">
+                    <input class="form-control" type="text" placeholder="03/04/3018, 4:00 AM" readonly>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="staticEmail" class="col-sm-3 col-form-label">Status</label>
+                  <div class="col-sm-9">
+                    <input class="form-control" type="text" placeholder="In Progress" readonly>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword" class="col-sm-3 col-form-label">Request</label>
+                  <div class="col-sm-9">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Expose wafer XYZ on Canon tool with recipe 123. Notify when complete. " readonly></textarea>
+                  </div>
+                </div>
                 <br>
-                </form>
-
+              </form>
 
             </div>
 
