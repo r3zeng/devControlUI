@@ -18,6 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
+    <script src ="./js/viewRequest.js"></script>
   </head>
 
   <body>
@@ -49,119 +50,42 @@
     <main role="main" class="container">
 
       <div class="starter-template">
-        <h1 style = "font-weight: 300">View Requests</h1>
+        <h1 style = "font-weight: 300"> View Request</h1>
         <br>
         <!-- <p class="lead">Current Sales</p> -->
         <div class="container">
           <div class="row">
 
-            <div class="col-4">
-              <div class="card text-center" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">IM</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="./createRequest.html?area=1" class="btn btn-primary">New Request</a>
-                  <a href="./createRequest.html?area=1" class="btn btn-primary">Request List</a>
-                </div>
+            <div class="col">
+            </div>
+            
+            <div class="input-group mb-3">
+                <select class="form-control" id="area" placeholder="Ex. Photo">
+                  <option selected="selected">Choose...</option>
+                  <option value="1">IM</option>
+                  <option value="2">Anelva</option>
+                  <option value="3">Photo</option>
+                  <option value="4">MR</option>
+                  <option value="5">Metro</option>
+                  <option value="6">Insp</option>
+                  <option value="7">CMP</option>
+                  <option value="8">Nife/Etch</option>
+                  <option value="9">Metals</option>
+                </select>
+              <div class="input-group-append">
+                  <a href="./requestList.html" id="goToList"><button class="btn btn-success sharing" type="button" id="view">View Request List</button></a>
               </div>
             </div>
 
-            <div class="col-4">
-              <div class="card text-center" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Anelva</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="./createRequest.html?area=2" class="btn btn-primary">New Request</a>
-                  <a href="./createRequest.html?area=2" class="btn btn-primary">Request List</a>
-                </div>
-              </div>
+
             </div>
 
-            <div class="col-4">
-              <div class="card text-center" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Photo</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="./createRequest.html?area=3" class="btn btn-primary">New Request</a>
-                  <a href="./createRequest.html?area=3" class="btn btn-primary">Request List</a>
-                </div>
-              </div>
+
+            <div class="col">
             </div>
+
+
           </div>
-
-
-          <br>
-          <div class="row">
-            <div class="col-4">
-              <div class="card text-center" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">MR</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="./createRequest.html?area=4" class="btn btn-primary">New Request</a>
-                  <a href="./createRequest.html?area=4" class="btn btn-primary">Request List</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-4">
-              <div class="card text-center" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Metro</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="./createRequest.html?area=5" class="btn btn-primary">New Request</a>
-                  <a href="./createRequest.html?area=5" class="btn btn-primary">Request List</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-4">
-              <div class="card text-center" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Insp</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="./createRequest.html?area=6" class="btn btn-primary">New Request</a>
-                  <a href="./createRequest.html?area=6" class="btn btn-primary">Request List</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <br>
-          <div class="row">
-            <div class="col-4">
-              <div class="card text-center" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">CMP</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="./createRequest.html?area=7" class="btn btn-primary">New Request</a>
-                  <a href="./createRequest.html?area=8" class="btn btn-primary">Request List</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-4">
-              <div class="card text-center" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">NiFE/Etch</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="./createRequest.html?area=8" class="btn btn-primary">New Request</a>
-                  <a href="./createRequest.html?area=8" class="btn btn-primary">Request List</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-4">
-              <div class="card text-center" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Metals</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="./createRequest.html?area=7" class="btn btn-primary">New Request</a>
-                  <a href="./createRequest.html?area=8" class="btn btn-primary">Request List</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
         <br>
 
