@@ -24,25 +24,25 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="index.html">Request List</a>
+      <a class="navbar-brand" href="#">Dev Control Center</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbars">
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">All</a>
-                </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Incomplete</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">In progress</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Completed</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="createRequest.html">Create Request</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="editRequest.html">Edit Request</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="viewRequests.html">View Requests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="waferStatus.html">Wafer Status</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -50,42 +50,252 @@
     <main role="main" class="container">
 
       <div class="starter-template">
+
+        <h1 style = "font-weight: 300">Photo Requests</h1>
+        <br>
+
         <div class="container">
           <div class="row">
 
             <div class="col">
             </div>
-            <h1>Photo Request</h1>
-            <table class="table">
-                <thead>
-                    <tr>
-                    <th scope="col">WAFER ID #</th>
-                    <th scope="col">% COMPLETION</th>
-                    <th scope="col">REQUESTOR</th>
-                    <th scope="col">ETA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <th scope="row">1</th>
-                    <td>50</td>
-                    <td>Otto</td>
-                    <td>3/4/2018, 4:00 PM</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>30</td>
-                    <td>Thornton</td>
-                    <td>...</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">3</th>
-                    <td>99</td>
-                    <td>the Bird</td>
-                    <td>...</td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <div class="col-sm-10 col-md-10 col-lg-10">
+              <nav>
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                  <a id = "dinexString" class="nav-item nav-link active" id="nav-dinex-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-dinex" aria-selected="true">Incomplete</a>
+                  <a class="nav-item nav-link" id="nav-blocks-tab" data-toggle="tab" href="#nav-blocks" role="tab" aria-controls="nav-blocks" aria-selected="false">In Progress</a>
+                  <a class="nav-item nav-link" id="nav-sell-tab" data-toggle="tab" href="#nav-sell" role="tab" aria-controls="nav-sell" aria-selected="false">Completed</a>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="shadow p-3 mb-5 bg-white rounded">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><div class="row">
+                        <div class="col" >
+                          <a style = "margin-left: 10">Wafer ID #</a>
+                        </div>
+                        <div class="col">
+                          % Completition
+                        </div>
+                        <div class="col">
+                          Requestor
+                        </div>
+                        <div class="col">
+                          ETA
+                        </div>
+                      </div></li>
+                    </ul>
+
+                    <div class="list-group list-group-flush" id = "dinexList">
+                      <a href="#" class="list-group-item list-group-item-action" style = "font-size: 12px">
+                        <div class="row">
+                          <div class="col" >
+                            1
+                          </div>
+                          <div class="col">
+                            53
+                          </div>
+                          <div class="col">
+                            Otto
+                          </div>
+                          <div class="col">
+                            3/4/2018, 4:00 PM
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#" class="list-group-item list-group-item-action" style = "font-size: 12px">
+                        <div class="row">
+                          <div class="col" >
+                            2
+                          </div>
+                          <div class="col">
+                            25
+                          </div>
+                          <div class="col">
+                            Thornton
+                          </div>
+                          <div class="col">
+                            ...
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#" class="list-group-item list-group-item-action" style = "font-size: 12px">
+                        <div class="row">
+                          <div class="col" >
+                            3
+                          </div>
+                          <div class="col">
+                            94
+                          </div>
+                          <div class="col">
+                            the Bird
+                          </div>
+                          <div class="col">
+                            ...
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+                <div class="tab-pane fade" id="nav-blocks" role="tabpanel" aria-labelledby="nav-blocks-tab">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="shadow p-3 mb-5 bg-white rounded">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><div class="row">
+                          <div class="col" >
+                            <a style = "margin-left: 10">Wafer ID #</a>
+                          </div>
+                          <div class="col">
+                            % Completition
+                          </div>
+                          <div class="col">
+                            Requestor
+                          </div>
+                          <div class="col">
+                            ETA
+                          </div>
+                        </div></li>
+                      </ul>
+
+                      <div class="list-group list-group-flush" id = "dinexList">
+                        <a href="#" class="list-group-item list-group-item-action" style = "font-size: 12px">
+                          <div class="row">
+                            <div class="col" >
+                              1
+                            </div>
+                            <div class="col">
+                              53
+                            </div>
+                            <div class="col">
+                              Otto
+                            </div>
+                            <div class="col">
+                              3/4/2018, 4:00 PM
+                            </div>
+                          </div>
+                        </a>
+
+                        <a href="#" class="list-group-item list-group-item-action" style = "font-size: 12px">
+                          <div class="row">
+                            <div class="col" >
+                              2
+                            </div>
+                            <div class="col">
+                              25
+                            </div>
+                            <div class="col">
+                              Thornton
+                            </div>
+                            <div class="col">
+                              ...
+                            </div>
+                          </div>
+                        </a>
+
+                        <a href="#" class="list-group-item list-group-item-action" style = "font-size: 12px">
+                          <div class="row">
+                            <div class="col" >
+                              3
+                            </div>
+                            <div class="col">
+                              94
+                            </div>
+                            <div class="col">
+                              the Bird
+                            </div>
+                            <div class="col">
+                              ...
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+                <div class="tab-pane fade" id="nav-sell" role="tabpanel" aria-labelledby="nav-sell-tab">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="shadow p-3 mb-5 bg-white rounded">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><div class="row">
+                          <div class="col" >
+                            <a style = "margin-left: 10">Wafer ID #</a>
+                          </div>
+                          <div class="col">
+                            Requestor
+                          </div>
+                          <div class="col">
+                            ETA
+                          </div>
+                        </div></li>
+                      </ul>
+
+                      <div class="list-group list-group-flush" id = "dinexList">
+                        <a href="#" class="list-group-item list-group-item-action" style = "font-size: 12px">
+                          <div class="row">
+                            <div class="col" >
+                              1
+                            </div>
+                            <div class="col">
+                              Otto
+                            </div>
+                            <div class="col">
+                              3/4/2018, 4:00 PM
+                            </div>
+                          </div>
+                        </a>
+
+                        <a href="#" class="list-group-item list-group-item-action" style = "font-size: 12px">
+                          <div class="row">
+                            <div class="col" >
+                              2
+                            </div>
+                            <div class="col">
+                              Thornton
+                            </div>
+                            <div class="col">
+                              ...
+                            </div>
+                          </div>
+                        </a>
+
+                        <a href="#" class="list-group-item list-group-item-action" style = "font-size: 12px">
+                          <div class="row">
+                            <div class="col" >
+                              3
+                            </div>
+                            <div class="col">
+                              the Bird
+                            </div>
+                            <div class="col">
+                              ...
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
 
             <div class="col">
             </div>
@@ -93,7 +303,6 @@
 
           </div>
         </div>
-        <br>
 
       </div>
 
