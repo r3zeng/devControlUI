@@ -40,7 +40,7 @@
             <a class="nav-link" href="viewRequests.html">View Requests</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="waferStatus.html">Wafer Status</a>
+            <a class="nav-link" href="waferStatus.html">Request Status</a>
           </li>
         </ul>
       </div>
@@ -49,7 +49,7 @@
     <main role="main" class="container">
 
       <div class="starter-template">
-        <h1 style = "font-weight: 300">Viewing Wafer ID# 123456</h1>
+        <h1 style = "font-weight: 300">Viewing Request ID# 123456</h1>
         <br>
         <!-- <p class="lead">Current Sales</p> -->
         <div class="container">
@@ -60,6 +60,18 @@
 
             <div class="col-sm-10 col-md-8 col-lg-6">
               <form>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label">Wafer ID</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" type="text" placeholder="11" readonly>
+                    </div>
+                </div>
+                <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-3 col-form-label">Tool set</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" type="text" placeholder="tool 1" readonly>
+                        </div>
+                    </div>
                 <div class="form-group row">
                   <label for="staticEmail" class="col-sm-3 col-form-label">Request Area</label>
                   <div class="col-sm-9">
