@@ -1,12 +1,11 @@
 {
-  "name": "dinExtra",
+  "name": "DevUI",
   "version": "1.0.0",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "4.16.3",
-    "ejs": "2.6.1"
+    "express": "4.16.3"
   },
   "author": "Jeffrey Li",
   "license": "ISC"
