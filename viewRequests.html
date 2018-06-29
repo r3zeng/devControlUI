@@ -19,6 +19,13 @@
   <!-- Custom styles for this template -->
   <link href="starter-template.css" rel="stylesheet">
   <script src ="./js/viewRequest.js"></script>
+
+  <style>
+  .table td, .table th {
+    padding: 0rem;
+    vertical-align: top;
+  }
+  </style>
 </head>
 
 <body>
@@ -52,303 +59,22 @@
     <h1 style = "font-weight: 300"> View Requests</h1>
     <br>
     <!-- <p class="lead">Current Sales</p> -->
-    <div style = "margin-left:15px;">
-      <div class = "row">
-        <div class="col-s-12">
-          <div class="nav nav-tabs " id="nav-tab" role="tablist">
-            <a id = "dinexString" class="nav-item nav-link active" id="nav-dinex-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-all" aria-selected="true">All</a>
-            <a class="nav-item nav-link" id="nav-queued-tab" data-toggle="tab" href="#nav-queued" role="tab" aria-controls="nav-queued" aria-selected="false">Queued</a>
-            <a class="nav-item nav-link" id="nav-in_progress-tab" data-toggle="tab" href="#nav-in_progress" role="tab" aria-controls="nav-in_progress" aria-selected="false">In Progress</a>
-            <a class="nav-item nav-link" id="nav-hold-tab" data-toggle="tab" href="#nav-hold" role="tab" aria-controls="nav-hold" aria-selected="false">On hold</a>
-            <a class="nav-item nav-link" id="nav-done-tab" data-toggle="tab" href="#nav-done" role="tab" aria-controls="nav-done" aria-selected="false">Done</a>
-          </div>
+    <div class = "container" >
+    <div class = "row">
+      <div class = "col-s-12">
+        <div class="nav nav-tabs " id="nav-tab" role="tablist">
+          <a id = "dinexString" class="nav-item nav-link active" id="nav-dinex-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-all" aria-selected="true">All</a>
+          <a class="nav-item nav-link" id="nav-queued-tab" data-toggle="tab" href="#nav-queued" role="tab" aria-controls="nav-queued" aria-selected="false">Queued</a>
+          <a class="nav-item nav-link" id="nav-in_progress-tab" data-toggle="tab" href="#nav-in_progress" role="tab" aria-controls="nav-in_progress" aria-selected="false">In Progress</a>
+          <a class="nav-item nav-link" id="nav-hold-tab" data-toggle="tab" href="#nav-hold" role="tab" aria-controls="nav-hold" aria-selected="false">On hold</a>
+          <a class="nav-item nav-link" id="nav-done-tab" data-toggle="tab" href="#nav-done" role="tab" aria-controls="nav-done" aria-selected="false">Done</a>
+        </div>
 
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
-              <table class="table table-borderless shadow p-3 mb-5 bg-white rounded" >
-                <thead class="thead-light">
-                  <tr>
-                    <th scope="col">IM</th>
-                    <th scope="col">Anelva</th>
-                    <th scope="col">Photo</th>
-                    <th scope="col">MR</th>
-                    <th scope="col">Metro</th>
-                    <th scope="col">Insp</th>
-                    <th scope="col">CMP</th>
-                    <th scope="col">NiFe/Etch</th>
-                    <th scope="col">Metals</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <button type="button" class="btn btn-outline-success">
-                        ID #: 412489<br>
-                        Queued<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-secondary">
-                        ID #: 348093<br>
-                        completed<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-secondary">
-                        Completed request<br>
-                        completed<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-warning">
-                        In Progress request<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-success">
-                        Queued request<br>
-                        Queued<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-danger">
-                        On hold request<br>
-                        On hold<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-danger">
-                        On hold request<br>
-                        On hold<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-success">
-                        Queued request<br>
-                        Queued<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-success">
-                        Queued request<br>
-                        Queued<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button type="button" class="btn btn-outline-warning">
-                        In Progress request<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </th>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </th>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                        Primary<br>
-                        in progress<br>
-                        3/20/2018 4:00
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-            </div>
-            <div class="tab-pane fade" id="nav-queued" role="tabpanel" aria-labelledby="nav-home-tab">
-
-              <table class="table table-borderless shadow p-3 mb-5 bg-white rounded" >
-                <thead class="thead-light">
+            <table class="table table-borderless" >
+              <thead class="thead-light">
                 <tr>
                   <th scope="col">IM</th>
                   <th scope="col">Anelva</th>
@@ -360,8 +86,8 @@
                   <th scope="col">NiFe/Etch</th>
                   <th scope="col">Metals</th>
                 </tr>
-                </thead>
-                <tbody>
+              </thead>
+              <tbody>
                 <tr>
                   <td>
                     <button type="button" class="btn btn-outline-success">
@@ -371,57 +97,57 @@
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                    <button type="button" class="btn btn-outline-secondary">
                       ID #: 348093<br>
-                      completed<br>
+                      In Progress<br>
                       3/20/2018 4:00
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Completed request<br>
-                      completed<br>
+                    <button type="button" class="btn btn-outline-secondary">
+                      ID #: 342323<br>
+                      In Progress<br>
                       3/20/2018 4:00
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      In Progress request<br>
-                      in progress<br>
+                    <button type="button" class="btn btn-outline-warning">
+                      ID #: 248043<br>
+                      On Hold<br>
                       3/20/2018 4:00
                     </button>
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-success">
-                      Queued request<br>
+                      ID #: 248043<br>
                       Queued<br>
                       3/20/2018 4:00
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      On hold request<br>
-                      On hold<br>
+                    <button type="button" class="btn btn-outline-danger">
+                      ID #: 248043<br>
+                      Done<br>
                       3/20/2018 4:00
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      On hold request<br>
-                      On hold<br>
+                    <button type="button" class="btn btn-outline-danger">
+                      ID #: 248343<br>
+                      Done<br>
                       3/20/2018 4:00
                     </button>
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-success">
-                      Queued request<br>
+                      ID #: 248043<br>
                       Queued<br>
                       3/20/2018 4:00
                     </button>
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-success">
-                      Queued request<br>
+                      ID #: 248043<br>
                       Queued<br>
                       3/20/2018 4:00
                     </button>
@@ -429,9 +155,23 @@
                 </tr>
                 <tr>
                   <td>
+                    <button type="button" class="btn btn-outline-warning">
+                      ID #: 412489<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
                     <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      In Progress request<br>
-                      in progress<br>
+                      Primary<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning">
+                      ID #: 248043<br>
+                      On Hold<br>
                       3/20/2018 4:00
                     </button>
                   </td>
@@ -457,9 +197,9 @@
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
+                    <button type="button" class="btn btn-outline-danger">
+                      ID #: 248043<br>
+                      Done<br>
                       3/20/2018 4:00
                     </button>
                   </td>
@@ -474,6 +214,57 @@
                     <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
                       Primary<br>
                       in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </th>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger">
+                      ID #: 248043<br>
+                      Done<br>
                       3/20/2018 4:00
                     </button>
                   </td>
@@ -536,9 +327,9 @@
                     </button>
                   </td>
                   <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
+                    <button type="button" class="btn btn-outline-success">
+                      ID #: 248043<br>
+                      Queued<br>
                       3/20/2018 4:00
                     </button>
                   </td>
@@ -557,78 +348,1140 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
-                  <th scope="row">
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </th>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                </tr>
-                </tbody>
-              </table>
+              </tbody>
+            </table>
 
-            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-queued" role="tabpanel" aria-labelledby="nav-home-tab">
+
+            <table class="table table-borderless" >
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">IM</th>
+                  <th scope="col">Anelva</th>
+                  <th scope="col">Photo</th>
+                  <th scope="col">MR</th>
+                  <th scope="col">Metro</th>
+                  <th scope="col">Insp</th>
+                  <th scope="col">CMP</th>
+                  <th scope="col">NiFe/Etch</th>
+                  <th scope="col">Metals</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <button type="button" class="btn btn-outline-success">
+                      ID #: 412489<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-secondary" disabled style="border-color: white; color:white;">
+                      ID #: 348093<br>
+                      In Progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-secondary" disabled style="border-color: white; color:white;">
+                      ID #: 342323<br>
+                      In Progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success">
+                      ID #: 248343<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning" disabled style="border-color: white; color:white;">
+                      ID #: 412489<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </th>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </th>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
+          <div class="tab-pane fade" id="nav-in_progress" role="tabpanel" aria-labelledby="nav-in_progress">
+
+            <table class="table table-borderless">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">IM</th>
+                  <th scope="col">Anelva</th>
+                  <th scope="col">Photo</th>
+                  <th scope="col">MR</th>
+                  <th scope="col">Metro</th>
+                  <th scope="col">Insp</th>
+                  <th scope="col">CMP</th>
+                  <th scope="col">NiFe/Etch</th>
+                  <th scope="col">Metals</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 412489<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-secondary">
+                      ID #: 348093<br>
+                      In Progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-secondary">
+                      ID #: 342323<br>
+                      In Progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248343<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning" disabled style="border-color: white; color:white;">
+                      ID #: 412489<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </th>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </th>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+          <div class="tab-pane fade" id="nav-hold" role="tabpanel" aria-labelledby="nav-in_progress">
+
+            <table class="table table-borderless" >
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">IM</th>
+                  <th scope="col">Anelva</th>
+                  <th scope="col">Photo</th>
+                  <th scope="col">MR</th>
+                  <th scope="col">Metro</th>
+                  <th scope="col">Insp</th>
+                  <th scope="col">CMP</th>
+                  <th scope="col">NiFe/Etch</th>
+                  <th scope="col">Metals</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning">
+                      ID #: 412489<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-secondary" disabled style="border-color: white; color:white;">
+                      ID #: 348093<br>
+                      In Progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning">
+                      ID #: 342323<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning">
+                      ID #: 248043<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248343<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning" disabled style="border-color: white; color:white;">
+                      ID #: 412489<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </th>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </th>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+          <div class="tab-pane fade" id="nav-done" role="tabpanel" aria-labelledby="nav-in_progress">
+
+            <table class="table table-borderless " >
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">IM</th>
+                  <th scope="col">Anelva</th>
+                  <th scope="col">Photo</th>
+                  <th scope="col">MR</th>
+                  <th scope="col">Metro</th>
+                  <th scope="col">Insp</th>
+                  <th scope="col">CMP</th>
+                  <th scope="col">NiFe/Etch</th>
+                  <th scope="col">Metals</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning" disabled style="border-color: white; color:white;">
+                      ID #: 412489<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-secondary" disabled style="border-color: white; color:white;">
+                      ID #: 348093<br>
+                      In Progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger">
+                      ID #: 342323<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger">
+                      ID #: 248343<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning" disabled style="border-color: white; color:white;">
+                      ID #: 412489<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-warning" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      On Hold<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </th>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-danger">
+                      ID #: 248043<br>
+                      Done<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </th>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
+                      ID #: 248043<br>
+                      Queued<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                      Primary<br>
+                      in progress<br>
+                      3/20/2018 4:00
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
         </div>
+      </div>
+
       </div>
     </div>
   </div>
