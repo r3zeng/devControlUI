@@ -19,12 +19,22 @@
   <!-- Custom styles for this template -->
   <link href="starter-template.css" rel="stylesheet">
   <script src ="./js/viewRequest.js"></script>
+  <script>
+    $(document).ready(function() {
+          $("#tab_all button").click(
+              function() {
+                  window.location.href = "./waferStatusExample.html";
+              }
+          );
+        }
+    );
+  </script>
 
   <style>
-  .table td, .table th {
-    padding: 0rem;
-    vertical-align: top;
-  }
+    .table td, .table th {
+      padding: 0rem;
+      vertical-align: top;
+    }
   </style>
 </head>
 
@@ -73,7 +83,7 @@
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
-            <table class="table table-borderless" >
+            <table id="tab_all" class="table table-borderless" >
               <thead class="thead-light">
                 <tr>
                   <th scope="col">IM</th>
@@ -354,7 +364,7 @@
           </div>
           <div class="tab-pane fade" id="nav-queued" role="tabpanel" aria-labelledby="nav-home-tab">
 
-            <table class="table table-borderless" >
+            <table id="tab_queued" class="table table-borderless" >
               <thead class="thead-light">
                 <tr>
                   <th scope="col">IM</th>
@@ -635,7 +645,7 @@
 
           <div class="tab-pane fade" id="nav-in_progress" role="tabpanel" aria-labelledby="nav-in_progress">
 
-            <table class="table table-borderless">
+            <table id="tab_in_progress" class="table table-borderless">
               <thead class="thead-light">
                 <tr>
                   <th scope="col">IM</th>
@@ -917,7 +927,7 @@
 
           <div class="tab-pane fade" id="nav-hold" role="tabpanel" aria-labelledby="nav-in_progress">
 
-            <table class="table table-borderless" >
+            <table id="tab_hold" class="table table-borderless" >
               <thead class="thead-light">
                 <tr>
                   <th scope="col">IM</th>
@@ -1199,7 +1209,7 @@
 
           <div class="tab-pane fade" id="nav-done" role="tabpanel" aria-labelledby="nav-in_progress">
 
-            <table class="table table-borderless " >
+            <table id="tab_done" class="table table-borderless " >
               <thead class="thead-light">
                 <tr>
                   <th scope="col">IM</th>
