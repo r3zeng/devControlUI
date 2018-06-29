@@ -24,7 +24,7 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="https://devcontrolcenter.herokuapp.com/">Dev Control Center</a>
+      <a class="navbar-brand" href="index.html">Dev Control Center</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,16 +32,16 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="https://devcontrolcenter.herokuapp.com/createRequest">Create Request</a>
+            <a class="nav-link" href="createRequest.html">Create Request</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://devcontrolcenter.herokuapp.com/editRequest">Edit Request</a>
+            <a class="nav-link" href="editRequest.html">Edit Request</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="https://devcontrolcenter.herokuapp.com/viewRequests">View Requests</a>
+            <a class="nav-link" href="#">View Requests</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://devcontrolcenter.herokuapp.com/waferStatus">Request Status</a>
+            <a class="nav-link" href="waferStatus.html">Wafer Status</a>
           </li>
         </ul>
       </div>
@@ -50,15 +50,24 @@
     <main role="main" class="container">
 
       <div class="starter-template">
-        <h1 style = "font-weight: 300"> View Request</h1>
+        <h1 style = "font-weight: 300"> View Requests</h1>
         <br>
         <!-- <p class="lead">Current Sales</p> -->
+
         <div class="container">
           <div class="row">
 
+
+
+            <div class="col-sm-11">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <div class="container">
+          <div class = "row">
+          <!-- <div class="row">
+
             <div class="col">
             </div>
-            
+
             <div class="input-group mb-3">
                 <select class="form-control" id="area" placeholder="Ex. Photo">
                   <option selected="selected">Choose...</option>
@@ -73,22 +82,345 @@
                   <option value="9">Metals</option>
                 </select>
               <div class="input-group-append">
-                  <a href="https://devcontrolcenter.herokuapp.com/requestList" id="goToList"><button class="btn btn-success sharing" type="button" id="view">View Request List</button></a>
+                  <button class="btn btn-success sharing" type="button" id="view">View Request List</button>
               </div>
             </div>
 
 
-            </div>
-
-
+          </div> -->
+<!--
             <div class="col">
-              12312312312
+                <br>
+                <br>
+                <br>
+                <h2 style = "font-weight: 200">Status</h2>
+            </div> -->
+            <div class="col-s-12">
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <a id = "dinexString" class="nav-item nav-link active" id="nav-dinex-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-all" aria-selected="true">All</a>
+                    <a class="nav-item nav-link" id="nav-queued-tab" data-toggle="tab" href="#nav-queued" role="tab" aria-controls="nav-queued" aria-selected="false">Queued</a>
+                    <a class="nav-item nav-link" id="nav-in_progress-tab" data-toggle="tab" href="#nav-in_progress" role="tab" aria-controls="nav-in_progress" aria-selected="false">In Progress</a>
+                    <a class="nav-item nav-link" id="nav-hold-tab" data-toggle="tab" href="#nav-hold" role="tab" aria-controls="nav-hold" aria-selected="false">On hold</a>
+                    <a class="nav-item nav-link" id="nav-done-tab" data-toggle="tab" href="#nav-done" role="tab" aria-controls="nav-done" aria-selected="false">Done</a>
+
+                </div>
+
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                        <table class="table table-borderless">
+                            <thead class="thead-dark">
+                            <tr>
+
+                                <th scope="col">IM</th>
+                                <th scope="col">Anelva</th>
+                                <th scope="col">Photo</th>
+                                <th scope="col">MR</th>
+                                <th scope="col">Metro</th>
+                                <th scope="col">Insp</th>
+                                <th scope="col">CMP</th>
+                                <th scope="col">NiFe/Etch</th>
+                                <th scope="col">Metals</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td scope="row">
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        Completed request<br>
+                                        completed<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-warning">
+                                        In Progress request<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-success">
+                                        Queued request<br>
+                                        Queued<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-danger">
+                                        On hold request<br>
+                                        On hold<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </th>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-queued" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                        <table class="table table-borderless">
+                            <thead class="thead-dark">
+                            <tr>
+
+                                <th scope="col">IM</th>
+                                <th scope="col">Anelva</th>
+                                <th scope="col">Photo</th>
+                                <th scope="col">MR</th>
+                                <th scope="col">Metro</th>
+                                <th scope="col">Insp</th>
+                                <th scope="col">CMP</th>
+                                <th scope="col">NiFe/Etch</th>
+                                <th scope="col">Metals</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td scope="row">
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Completed request<br>
+                                        completed<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        In Progress request<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-success">
+                                        Queued request<br>
+                                        Queued<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        On hold request<br>
+                                        On hold<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
+                                        Primary<br>
+                                        in progress<br>
+                                        3/20/2018 4:00
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+
+
+
             </div>
-
-
           </div>
         </div>
-        <br>
 
       </div>
 
