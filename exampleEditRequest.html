@@ -13,7 +13,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
+    <script>
+      $(document).ready(function () {
+          var comment = $("#after_com");
+          $("#add_com").click(function() {
+              comment.after('<div class="form-group row"><label for="inputPassword"' +
+                  ' class="col-sm-3 col-form-label">Comment</label>' +
+                  '<div class="col-sm-9"><textarea class="form-control" rows="3" value = "Comment example">' +
+                  '</textarea></div></div>');
+          });
+          $("#btn_update").click(function() {
+              alert("Change success!");
+              window.location.href = './';
+          });
+      });
+    </script>
 
 
     <!-- Custom styles for this template -->
@@ -102,14 +116,34 @@
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="inputPassword" class="col-sm-3 col-form-label">Request</label>
+                  <label for="request" class="col-sm-3 col-form-label">Request</label>
                   <div class="col-sm-9">
                     <textarea class="form-control" id="request" rows="3" value = "Request example">Expose wafer SVT on Canon tool with recipe 117. Notify when complete. </textarea>
                   </div>
                 </div>
+                <div class="form-group row">
+                  <label for="customPhoto" class="col-sm-3 col-form-label">Upload Photos</label>
+                  <div class="col-sm-9">
+                    <input type="file" class="custom-file-input" id="customPhoto">
+                    <label class="custom-file-label" for="customPhoto"style = " position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 93%;"><a style = "margin-right: 80px;">Choose File</a></label>
+                  </div>
+                </div>
+                <div class="form-group row" id="before_com">
+                  <label for="customFile" class="col-sm-3 col-form-label">Upload Documents</label>
+                  <div class="col-sm-9">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile"style = " position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 93%;"><a style = "margin-right: 80px;">Choose File</a></label>
+                  </div>
+                </div>
+
+
+
+                <div class="form-group row" id="after_com">
+                  <button type="button" class="btn rounded btn-success col-sm-3" id="add_com">+Comment</button>
+                </div>
 
                 <br>
-                <button type="button" class="btn btn-success btn-lg sharing">Update Request</button>
+                <button type="button" class="btn btn-success btn-lg sharing" id="btn_update">Update Request</button>
                 <br>
                 <br>
                 <p class="text-secondary"><a href="https://devcontrolcenter.herokuapp.com/editRequest" class="text-secondary" style = "font-size: 12px">Edit my Request</a></p>
