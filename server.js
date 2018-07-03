@@ -48,5 +48,9 @@ router.get("/waferStatus",function(req,res){
 });
 
 router.get("/waferStatusExample",function(req,res){
-  res.sendFile(path.join(__dirname, '') + "/waferStatusExample.html");
+    res.sendFile(path.join(__dirname, '') + "/waferStatusExample.html");
+});
+
+router.get("/viewRequestsByTools",function(req,res){
+    res.sendFile(path.join(__dirname, '') + "/viewRequestsByTools.html");
 });

@@ -90,16 +90,6 @@
   <div class="starter-template">
     <h1 style = "font-weight: 300"> View Requests</h1>
     <br>
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col row"><div class="col-2 rounded" style="background-color: grey"></div><div class="col align-self-center">Queued</div></div>
-      <div class="col row"><div class="col-2 rounded" style="background-color: green;"></div><div class="col align-self-center">In Progress</div></div>
-    </div><br>
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col row"><div class="col-2 rounded" style="background-color: yellow;"></div><div class="col align-self-center">On Hold</div></div>
-      <div class="col row"><div class="col-2 rounded" style="background-color: red;"></div><div class="col align-self-center">Done</div></div>
-    </div><br>
     <div class = "container" >
     <div class = "row">
       <div class = "col-s-12">
@@ -109,6 +99,14 @@
           <a class="nav-item nav-link" id="nav-in_progress-tab" data-toggle="tab" href="#nav-in_progress" role="tab" aria-controls="nav-in_progress" aria-selected="false">In Progress</a>
           <a class="nav-item nav-link" id="nav-hold-tab" data-toggle="tab" href="#nav-hold" role="tab" aria-controls="nav-hold" aria-selected="false">On hold</a>
           <a class="nav-item nav-link" id="nav-done-tab" data-toggle="tab" href="#nav-done" role="tab" aria-controls="nav-done" aria-selected="false">Done</a>
+
+          <form class="form-inline">
+            <span>&nbsp</span>
+            <span class="badge badge-secondary badge-pill">Queued</span><span>&nbsp</span>
+            <span class="badge badge-success badge-pill">In Progress</span><span>&nbsp</span>
+            <span class="badge badge-warning badge-pill">On Hold</span><span>&nbsp</span>
+            <span class="badge badge-danger badge-pill">Done</span><span>&nbsp</span>
+          </form>
 
         </div>
 
