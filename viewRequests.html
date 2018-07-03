@@ -26,6 +26,18 @@
                   window.location.href = "./waferStatusExample.html";
               }
           );
+          $("th").each(function() {
+              var head = $(this);
+              head.mouseover(function() {
+                  head.css('background-color', '#ccc');
+              });
+              head.mouseout(function() {
+                  head.css('background-color', '#e9ecef');
+              });
+              head.click(function () {
+                  window.location.href = './viewRequestsByTools.html';
+              });
+          });
         }
     );
   </script>
@@ -40,6 +52,10 @@
     }
     #tab_backup th{
       background-color: #ccc;
+    }
+    button {
+      height: 86px;
+      width: 132.573px;
     }
   </style>
 </head>
@@ -138,42 +154,42 @@
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-warning">
-                      ID #: 248043<br>
+                      ID #: 248383<br>
                       On Hold<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-secondary">
-                      ID #: 248043<br>
+                      ID #: 248573<br>
                       Queued<br>
                       3/20/2018 4:00
                     </button>
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-danger">
-                      ID #: 248043<br>
+                      ID #: 243643<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-danger">
-                      ID #: 248343<br>
+                      ID #: 213243<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-secondary">
-                      ID #: 248043<br>
+                      ID #: 249763<br>
                       Queued<br>
                       3/20/2018 4:00
                     </button>
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-secondary">
-                      ID #: 248043<br>
+                      ID #: 242353<br>
                       Queued<br>
                       3/20/2018 4:00
                     </button>
@@ -184,21 +200,21 @@
                     <button type="button" class="btn btn-outline-warning">
                       ID #: 412489<br>
                       On Hold<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
                       Primary<br>
                       On Hold<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-warning">
                       ID #: 248043<br>
                       On Hold<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -226,7 +242,7 @@
                     <button type="button" class="btn btn-outline-danger">
                       ID #: 248043<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -263,7 +279,7 @@
                     <button type="button" class="btn btn-outline-danger">
                       ID #: 248043<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -291,7 +307,7 @@
                     <button type="button" class="btn btn-outline-danger">
                       ID #: 248043<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -435,7 +451,7 @@
                     <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
                       ID #: 248043<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -544,7 +560,7 @@
                     <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
                       ID #: 248043<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -572,7 +588,7 @@
                     <button type="button" class="btn btn-outline-success" disabled style="border-color: white; color:white;">
                       ID #: 248043<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -963,7 +979,7 @@
                     <button type="button" class="btn btn-outline-warning">
                       ID #: 412489<br>
                       On Hold<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -977,14 +993,14 @@
                     <button type="button" class="btn btn-outline-warning">
                       ID #: 342323<br>
                       On Hold<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-warning">
                       ID #: 248043<br>
                       On Hold<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -1259,7 +1275,7 @@
                     <button type="button" class="btn btn-outline-danger">
                       ID #: 342323<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -1280,14 +1296,14 @@
                     <button type="button" class="btn btn-outline-danger">
                       ID #: 248043<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
                     <button type="button" class="btn btn-outline-danger">
                       ID #: 248343<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -1352,7 +1368,7 @@
                     <button type="button" class="btn btn-outline-danger">
                       ID #: 248043<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -1417,7 +1433,7 @@
                     <button type="button" class="btn btn-outline-danger">
                       ID #: 248043<br>
                       Done<br>
-                      3/20/2018 4:00
+
                     </button>
                   </td>
                   <td>
@@ -1502,197 +1518,7 @@
                 </tr>
               </tbody>
             </table>
-             <!-- <table id="tab_backup" class="table table-borderless" >
-              <tbody>
-                <tr>
-                  <th class="rounded-left">
-                    <br>
-                    IM<br><br>
-                  </th>
-                  <td>
-                    <button type="button" class="btn btn-outline-danger">
-                      <div>ID #: 412489</div>
-                      <div>Queued</div>
-                      <div>3/20/2018 4:00</div>
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-secondary">
-                      ID #: 348093<br>
-                      In Progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-secondary">
-                      ID #: 342323<br>
-                      In Progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-danger">
-                      ID #: 248043<br>
-                      Queued<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="rounded-left">
-                    <br>
-                    Anelva<br><br>
-                  </th>
-                  <td>
-                    <button type="button" class="btn btn-outline-warning">
-                      ID #: 342323<br>
-                      On Hold<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="rounded-left">
-                  <br>
-                    Photo<br><br>
-                  </th>
-                  <td scope="row">
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="rounded-left">
-                    <br>
-                    MR<br><br>
-                  </th>
-                  <td scope="row">
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="rounded-left">
-                    <br>
-                    Metro<br><br>
-                  </th>
-                  <td>
-                    <button type="button" class="btn btn-outline-danger">
-                      <div>ID #: 412489</div>
-                      <div>Queued</div>
-                      <div>3/20/2018 4:00</div>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="rounded-left">
-                    <br>
-                    Insp<br><br>
-                  </th>
-                  <td scope="row">
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="rounded-left">
-                    <br>
-                    CMP<br><br>
-                  </th>
-                  <td>
-                    <button type="button" class="btn btn-outline-danger">
-                      <div>ID #: 412489</div>
-                      <div>Queued</div>
-                      <div>3/20/2018 4:00</div>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="rounded-left">
-                    <br>
-                    NiFe/Etch<br><br>
-                  </th>
-                  <td scope="row">
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-outline-light" disabled style="border-color: white; color:white;">
-                      Primary<br>
-                      in progress<br>
-                      3/20/2018 4:00
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="rounded-left">
-                    <br>
-                    Metals<br><br>
-                  </th>
-                </tr>
-              </tbody>
-            </table> -->
+
           </div>
 
 
